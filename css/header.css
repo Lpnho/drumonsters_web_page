@@ -1,0 +1,26 @@
+header .nav .nav-link {
+    color: var(--primary-white);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    font-size: large;
+    padding: 0 .5rem;
+}
+
+header .nav .nav-link:hover {
+    transition: .4s;
+    opacity: .8;
+}
+
+header .nav .nav-link:visited {
+    color: var(--primary-white);
+}
+
+.svg-hamburger {
+    fill: var(--primary-white);
+}
+
+.svg-hamburger path {
+    stroke: var(--primary-white);
+}

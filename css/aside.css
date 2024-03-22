@@ -1,0 +1,18 @@
+aside .nav .nav-link {
+    color: var(--primary-white);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    font-size: large;
+    padding: 0 .5rem;
+}
+
+aside .nav .nav-link:hover {
+    transition: .4s;
+    opacity: .8;
+}
+
+aside .nav .nav-link:visited {
+    color: var(--primary-white);
+}

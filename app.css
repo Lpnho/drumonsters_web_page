@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+
+/*
+    Bootstrap BreackPoints
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px 
+*/
+
+:root {
+    --primary-black: #000000;
+    --primary-white: #FFFFFF;
+    --primary-blue: #00468E;
+    --primary-red: #FE2E01;
+    --primary-gray: #989C9F;
+    --secondary-gray: #828282;
+    --primary-dark_blue: #0D0F28;
+
+    --linear-gradient: url("assets/gradient-background.jpg");
+    --linear-gradient_reverse: url("assets/gradient-reverse-background.jpg");
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Fonts */
+.f-pr-family {
+    font-family: "Inter", sans-serif;
+}
+
+.f-pr-black {
+    color: var(--primary-black);
+}
+
+.f-pr-white {
+    color: var(--primary-white);
+}
+
+.f-sd-gray {
+    color: var(--secondary-gray);
+}
+
+
+/* Titles */
+.title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: left;
+    font-size: xxx-large;
+}
+
+
+@media (max-width:576px) {
+    .title {
+        font-size: xx-large;
+    }
+}
+
+.subtitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 61.6px;
+    text-align: left;
+    font-size: xx-large;
+}
+
+.h3-subtitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    font-size: x-large;
+}
+
+.h4-subtitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    font-size: large;
+}
+
+/* Descriptions */
+.description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: var(--secondary-gray);
+    font-size: medium;
+}
+
+.sub-description {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: var(--primary-black);
+    font-size: medium;
+}
+
+
+/* Backgrounds */
+.bg-pr-dark-blue {
+    background-color: var(--primary-dark_blue);
+}
+
+.bg-img-lgradient {
+    background-image: var(--linear-gradient);
+}
+
+.bg-img-lrgradient {
+    background-image: var(--linear-gradient_reverse);
+}
+
+/* Icons */
+
+.svg-icon {
+    width: 46px;
+    fill: var(--secondary-gray);
+    /* height: 50; */
+}
+
+
+.social-svg-icon {
+    width: 26px;
+    fill: var(--primary-white);
+    display: inline;
+}
+
+.img-icon {
+    height: 100px;
+}
+
+.btn-hamburger {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    padding: .4rem;
+    border-color: transparent;
+    border-radius: 2rem;
+    background-color: var(--primary-dark_blue);
+}
+
+.btn-up {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    border-color: transparent;
+    background-color: transparent;
+    /* border-radius: 2rem; */
+    /* background-color: var(--primary-dark_blue); */
+}
+
+.btn-up svg {
+    fill: var(--primary-blue);
+    width: 40px;
+    height: 40px;
+}
+
+/* Bootstrap overrided*/
+#awards .img-thumbnail {
+    min-width: 200px;
+    width: 260px;
+    height: auto;
+
+}
+
+#awards .carousel-indicators {
+    bottom: -30px;
+}
+
+#social-impact .img-thumbnail {
+    max-width: 260px;
+}
+
+#sectors .row {
+    margin-top: 1.4rem;
+}
+
+
+/* Classes  Diversas */
