@@ -24,7 +24,10 @@
     --linear-gradient_reverse: url("assets/gradient-reverse-background.jpg");
     font-family: "Inter", sans-serif;
 }
-
+.row{
+    max-width: 100%;
+    margin: 0;
+}
 a {
     text-decoration: none;
 }
@@ -142,6 +145,7 @@ a {
     width: fit-content;
     height: fit-content;
     position: fixed;
+    z-index: 100;
     padding: .4rem;
     border-color: transparent;
     border-radius: 2rem;
@@ -152,7 +156,7 @@ a {
     width: fit-content;
     height: fit-content;
     position: fixed;
-    right: 30px;
+    right: 5%;
     bottom: 60px;
     border-color: transparent;
     background-color: transparent;
@@ -171,7 +175,6 @@ a {
     min-width: 200px;
     width: 260px;
     height: auto;
-
 }
 
 #awards .carousel-indicators {

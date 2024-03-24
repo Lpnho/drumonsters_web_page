@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
     <!-- bootstrap css -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <!-- app css -->
@@ -19,13 +21,13 @@
     <title>Drumonsters</title>
 </head>
 
-<body style="width: 100vw;overflow-x: hidden;">
+<body>
 
     <!-- Header -->
     <header id="header" class="row justify-content-center bg-pr-dark-blue" style="padding: .2rem 0;">
         <div class="col-10" style="padding-top:.2rem;">
             <nav class="row justify-content-between align-items-center">
-                <div class="col-4 h-100">
+                <div class="col-2 h-100">
 
                     <div style="position: absolute; top:0%;left: 0%;height: 108px;overflow-y: hidden; z-index: 5;">
                         <img style="height: 200px;width: 200px;" src="assets/lines-background.png" alt="">
@@ -38,7 +40,7 @@
                     </div>
                 </div>
 
-                <div class="col-8 d-none d-md-block">
+                <div class="col-10 d-none d-md-block">
                     <div class="nav align-items-center justify-content-around" style="flex-wrap: nowrap;">
                         <a class="nav-link" href="#home">Drumonsters</a>
                         <a class="nav-link" href="#about">Sobre</a>
@@ -109,10 +111,10 @@
         </div>
     </div>
 
-    <div class="row align-items-center justify-content-center mt-4">
+    <!-- Sobre -->
+    <div id="about" class="row align-items-center justify-content-center mt-4">
         <div class="col-10">
-            <!-- Sobre -->
-            <div id="about" class="row gap-5 justify-content-center  align-items-start" style="padding: 2rem 0;">
+            <div class="row gap-5 justify-content-center  align-items-start" style="padding: 2rem 0;">
 
                 <div class="col-12 col-md-6" style="padding: 0;">
                     <img src="images/team-members.jpg" alt="" style="width: 100%;height: auto; max-width: 600px;">
@@ -147,8 +149,14 @@
 
             </div>
 
-            <!-- Premiações -->
-            <div id="awards" class="row " style="margin-top:4rem; row-gap: .4rem;">
+        </div>
+    </div>
+
+    <!-- Premiações -->
+    <div id="awards" class="row align-items-center justify-content-center mt-4">
+        <div class="col-12 col-md-10">
+
+            <div class="row" style="margin-top:4rem; row-gap: 1rem;">
                 <div class="col-12">
                     <h2 class="subtitle">
                         Premiações
@@ -166,7 +174,9 @@
                             <!-- first carousel pack -->
                             <div class="carousel-item active">
 
-                                <div class="row justify-content-between" style="row-gap: .4rem;">
+                                <div class="row justify-content-center justify-content-md-between"
+                                    style="row-gap: .4rem;">
+
                                     <div class="col-12 col-md-5">
                                         <div class="row" style="row-gap: .4rem;">
                                             <div class="col">
@@ -210,6 +220,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -217,10 +228,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
+    <!-- Unifei e Itabira -->
+    <div id="social-impact" class="row align-items-center justify-content-center mt-4">
+        <div class="col-10">
 
-            <!-- Unifei e Itabira -->
-            <div id="social-impact" class="row" style="margin-top: 4rem;">
+            <div class="row" style="margin-top: 4rem;">
                 <div class="col-12">
                     <h2 class="subtitle">
                         Drumonsters, Unifei & Itabira
@@ -259,10 +274,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Setores -->
-            <div id="sectors" class="row justify-content-between"
-                style="row-gap: 2rem;margin-top: 4rem;padding-bottom:2rem ;">
+    <!-- Setores -->
+    <div id="sectors" class="row align-items-center justify-content-center mt-4">
+        <div class="col-12 col-sm-10">
+            <div class="row justify-content-between" style="row-gap: 2rem;margin-top: 4rem;padding-bottom:2rem ;">
                 <div class="col-12">
                     <h1 class="title">
                         Nossos Setores
@@ -376,7 +394,6 @@
 
 
             </div>
-
         </div>
     </div>
 
@@ -423,20 +440,21 @@
 
     <!-- Footer -->
     <footer class="row justify-content-center align-items-center bg-pr-dark-blue" style="padding: 1rem 0; gap: 1rem;">
-        <div class="col-10">
-            <div class="row align-items-center justify-content-center justify-content-sm-between"
-                style="gap: 1rem; row-gap: 1rem;">
+        <div class="col-12 col-sm-10">
+            <div class="row align-items-center justify-content-center justify-content-md-between"
+                style=" row-gap: 1rem;">
 
-                <div class="col-10 col-sm-2">
+                <div class="" style="width: fit-content;height: fit-content;">
                     <div class="row justify-content-center align-items-center">
-                        <div class="col-5">
+                        <div style="width: fit-content;height: fit-content;">
                             <img src="assets/logo.svg" alt="" class="img-icon">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-10 col-sm-3 col-md-4 col-lg-2 ">
-                    <div class="row justify-content-between" style="gap: .4rem;row-gap: .4rem;">
+                <div class="col-12 col-sm-10 col-md-4" >
+                    <div class="row justify-content-between" style="flex-wrap: nowrap;">
+
                         <a href="" class="col">
                             <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook social-svg-icon"
                                 viewBox="0 0 16 16">
@@ -471,7 +489,7 @@
                     </div>
                 </div>
 
-                <div class="col-10 col-sm-3 f-pr-white">
+                <div class="col-12 col-sm-10 col-md-4" >
                     <span style="font-weight:bold;" class="f-pr-white">&copy;2024 Drumonsters.</span> Todos os direitos
                     reservados
                 </div>
