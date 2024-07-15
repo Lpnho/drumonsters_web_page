@@ -201,14 +201,15 @@ a {
 
 
 
-
-
-
 /* #social-impact .img-thumbnail {
     max-width: 260px;
     max-height: auto;
 } */
 
+
+
+
+/* 420 x 360 -> Redmensionar imagens antes de adicinar*/
 .img-social-impact {
     display: block;
     min-height: 180px;
@@ -219,16 +220,15 @@ a {
 }
 
 
-
 #sectors .row {
     margin-top: 1.4rem;
 }
 
 
 
-/* 854x480  */
+/* 800 x 600 -> Redmensionar imagens antes de adicinar*/
 .img-gallery {
-    max-width: 854x;
-    max-height: 480px;
+    max-width: 800x;
+    max-height: 600px;
     object-fit: cover;
 }
