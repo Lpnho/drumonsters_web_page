@@ -24,10 +24,16 @@
     --linear-gradient_reverse: url("assets/gradient-reverse-background.jpg");
     font-family: "Inter", sans-serif;
 }
-.row{
+
+.no-bs-gutter-x {
+    --bs-gutter-x: 0 !important;
+}
+
+.row {
     max-width: 100%;
     margin: 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -170,6 +176,12 @@ a {
     height: 40px;
 }
 
+
+
+/* .img-about {} */
+
+
+
 /* Bootstrap overrided*/
 #awards .img-thumbnail {
     min-width: 200px;
@@ -177,17 +189,46 @@ a {
     height: auto;
 }
 
+/* 
+.img-awards {
+} 
+*/
+
 #awards .carousel-indicators {
     bottom: -30px;
 }
 
-#social-impact .img-thumbnail {
+
+
+
+
+
+
+/* #social-impact .img-thumbnail {
     max-width: 260px;
+    max-height: auto;
+} */
+
+.img-social-impact {
+    display: block;
+    min-height: 180px;
+    min-width: 260px;
+    width: 480px;
+    height: 360px;
+    object-fit: cover;
 }
+
+
 
 #sectors .row {
     margin-top: 1.4rem;
 }
 
 
-/* Classes  Diversas */
+
+/* 854x480  */
+.img-gallery {
+    max-width: 854x;
+    max-height: 480px;
+    object-fit: cover;
+}
