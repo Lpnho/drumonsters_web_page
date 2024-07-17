@@ -178,7 +178,11 @@ a {
 
 
 
-/* .img-about {} */
+.img-about {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
 
 
 
