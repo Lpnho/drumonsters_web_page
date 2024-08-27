@@ -1,4 +1,6 @@
-import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+// import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
+
+import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe-lightbox.esm.js';
 
 const galleryImages = [
     { src: 'images/gallery/gallery_1.png', width: 1080, height: 720 },
@@ -12,7 +14,8 @@ const lightbox = new PhotoSwipeLightbox({
     gallery: '#gallery--fade-transition',
     showHideAnimationType: 'fade',
     dataSource: galleryImages,
-    pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
+    pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe.esm.js')
+    // pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
 });
 
 const galleryHtml = document.getElementById('gallery-images');
