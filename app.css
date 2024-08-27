@@ -120,6 +120,14 @@ a {
     background-color: var(--primary-dark_blue);
 }
 
+.bg-pr-black {
+    background-color: var(--primary-black);
+}
+
+.bg-pr-white {
+    background-color: var(--primary-white);
+}
+
 .bg-img-lgradient {
     background-image: var(--linear-gradient);
 }
@@ -235,4 +243,9 @@ a {
     max-width: 800x;
     max-height: 600px;
     object-fit: cover;
+}
+
+
+.pswp .pswp__hide-on-close {
+    z-index: 2147483647 !important
 }

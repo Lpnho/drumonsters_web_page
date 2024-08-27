@@ -8,9 +8,14 @@
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Photoswipe CSS -->
+    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
+
     <!-- app css -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="app.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -98,7 +103,7 @@
 
                 <div class="col" style="padding: 0;">
                     <h1 class="title text-center">
-                        Drumonsters Robótica & Tecnologia & Engenharia.
+                        Drumonsters Robótica, Tecnologia e Engenharia.
                     </h1>
                 </div>
 
@@ -130,7 +135,7 @@
                         Somos uma equipe de competição de robótica da Universidade Federal de Itajubá - Itabira
                     </p>
 
-                    <p class="sub-description m-0 mt-2"style="text-align: justify;" >
+                    <p class="sub-description m-0 mt-2" style="text-align: justify;">
                         Sobre Nós
                         Composta por professores e estudantes apaixonados por tecnologia e engenharia, nossa equipe
                         apresenta um histórico de sucesso em competições nacionais e latino-americanas. Estamos sempre
@@ -172,17 +177,16 @@
 
                 <div class="col-12">
                     <div id="awards-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#awards-carousel" data-bs-slide-to="0" class="active"
                                 aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#awards-carousel" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
-                        </div>
+                        </div> -->
 
                         <div class="carousel-inner">
                             <!-- first carousel pack -->
                             <div class="carousel-item active">
-
                                 <div class="row justify-content-center justify-content-md-between"
                                     style="row-gap: .4rem;">
 
@@ -206,7 +210,6 @@
                                         </div>
                                     </div>
 
-
                                     <div class="col-12 col-md-5">
                                         <div class="row" style="row-gap: .4rem;">
                                             <div class="col">
@@ -226,14 +229,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <!-- second carousel pack -->
-                            <div class="carousel-item">
-
-                                <div class="row justify-content-center justify-content-md-between"
-                                    style="row-gap: .4rem;">
 
                                     <div class="col-12 col-md-5">
                                         <div class="row" style="row-gap: .4rem;">
@@ -278,8 +273,19 @@
 
                                 </div>
                             </div>
-                        </div>
 
+                            <!-- second carousel pack -->
+                            <!-- <div class="carousel-item">
+
+                                <div class="row justify-content-center justify-content-md-between"
+                                    style="row-gap: .4rem;">
+                                </div>
+                            </div> -->
+
+
+
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -456,9 +462,9 @@
     </div>
 
     <!-- Galeria de Fotos -->
-    <div id="gallery" class="row align-items-center justify-content-center mt-5">
+    <div id="gallery" class="row align-items-center justify-content-center mt-5 pb-4 ">
         <div class="col-10">
-            <h2 class="subtitle text-center">
+            <h2 class="title text-center">
                 Galeria de Fotos
             </h2>
         </div>
@@ -467,51 +473,76 @@
             <p class="description text-center">Um registro dos melhores momentos do nosso time!</p>
         </div>
 
-        <div class="col-12 bg-img-lrgradient" style="min-height: 20vh;">
+        <div class="container-fluid mt-5">
+            <div class="row justify-content-center justify-content-sm-center gy-md-0">
+                <!-- Imagens -->
+                <div class="col-md-3">
+                    <h1 class="subtitle d-md-none text-center">
+                        Fotos
+                    </h1>
+                    <div id="gallery-images"
+                        class="gallery-images d-flex flex-wrap justify-content-center justify-content-md-start row-cols-2 row-cols-sm-3 row-cols-md-2 row-cols-lg-3">
+                    </div>
+                </div>
 
-            <div class="row h-100 justify-content-center align-items-center">
-                <div class="col-10 col-sm-8 col-md-7 col-lg-4" style="padding: 1.6rem 0;">
-                    <div id="gallery-carousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-
-                            <div class="carousel-item active">
-                                <img src="images/team-members.jpg" class="d-block w-100 img-gallery"
-                                    style="height: auto;">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="images/gallery/gallery_1.png" class="d-block w-100 img-gallery"
-                                    style="height: auto;">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="images/gallery/gallery_2.png" class="d-block w-100 img-gallery"
-                                    style="height: auto;">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="images/gallery/gallery_3.png" class="d-block w-100 img-gallery"
-                                    style="height: auto;">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="images/gallery/gallery_4.png" class="d-block w-100 img-gallery"
-                                    style="height: auto;">
-                            </div>
+                <!-- Visualização Central -->
+                <div class="col-md-6 d-none d-md-block">
+                    <div id="display-area" class="border d-flex justify-content-center align-items-center">
+                        <div class="pswp-gallery d-none" id="gallery--fade-transition">
                         </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                        <div id="display-image-container" data-img-index="" data-pswp-src="" data-pswp-width=""
+                            data-pswp-height="">
+                            <img id="display-image" src="" alt="">
+                        </div>
 
+                        <div id="display-video-container" class="d-none">
+                            <video id="display-video" class="img-thumbnail" controls>
+                                <source src="images/gallery/video_1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vídeos -->
+                <div class="col-md-3">
+                    <h1 class="subtitle text-center d-md-none">
+                        Vídeos
+                    </h1>
+
+                    <div
+                        class="gallery-videos d-flex flex-wrap justify-content-center justify-content-md-start row-cols-2 row-cols-sm-3 row-cols-md-2 ">
+                        <div class="gallery-item">
+                            <video class="img-thumbnail video-click">
+                                <source src="images/gallery/video_1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="gallery-item">
+                            <video class="img-thumbnail video-click">
+                                <source src="images/gallery/video_2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="gallery-item">
+                            <video class="img-thumbnail video-click">
+                                <source src="images/gallery/video_2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="gallery-item">
+                            <video class="img-thumbnail video-click">
+                                <source src="images/gallery/video_2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="gallery-item">
+                            <video class="img-thumbnail video-click">
+                                <source src="images/gallery/video_2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="gallery-item">
+                            <video class="img-thumbnail video-click">
+                                <source src="images/gallery/video_2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -569,7 +600,8 @@
                 </div>
 
                 <div class="col-12 col-sm-10 col-md-4 f-pr-white">
-                    <span style="font-weight:bold;" class="f-pr-white">&copy;2024 Drumonsters.</span> Todos os direitos
+                    <span style="font-weight:bold;" class="f-pr-white">&copy;2024 Drumonsters.</span> Todos os
+                    direitos
                     reservados
                 </div>
 
@@ -587,20 +619,28 @@
 
 
     <!-- V-Libras -->
-    <div vw class="enabled">
+    <div vw class="enabled" style="z-index: 21470 !important;">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
 
-    <!-- v-libras -->
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <!-- bootstrap js -->
-    <!-- <script src="bootstrap/js/bootstrap.js"></script> -->
+
+
+
+    <!-- Bootstrap js -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- V-Libras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+    <!-- Photoswipe JS -->
+    <script src="js/gallery.js" type="module"></script>
+
 </body>
 
 </html>

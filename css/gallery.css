@@ -1,0 +1,43 @@
+#display-area {
+    height: 60vh;
+    /* background-color: #f8f9fa; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-thumbnail {
+    border: none;
+    border-radius: 0.6rem;
+    object-fit: cover;
+    background-color: transparent !important;
+}
+
+.gallery-images img,
+.gallery-videos video {
+    width: 100%;
+    max-width: 280px;
+    /* max-width: 150px; */
+    /* Aumenta o tamanho máximo das previews */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.gallery-images,
+.gallery-videos {
+    max-height: 70vh;
+    /* Limita a altura dos menus laterais */
+    overflow-y: auto;
+    /* Adiciona rolagem vertical */
+}
+
+.gallery-item {
+    margin-bottom: 10px;
+}
+
+#display-image {
+    max-width: 1080px;
+    width: fit-content;
+    height: auto;
+}
