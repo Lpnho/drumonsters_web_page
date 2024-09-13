@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/aside.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="app.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -28,6 +29,12 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div style="position: relative;" class="loader-base">
+            <img src="assets/engrenagem.png" class="loader loader-base" style="position: absolute;" alt="">
+            <img src="assets/dru.png" class="loader-base" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" alt="">
+        </div>
+    </div>
 
     <!-- Header -->
     <header id="header" class="row justify-content-center bg-pr-dark-blue" style="padding: .2rem 0;">
@@ -256,8 +263,8 @@
                                     <div class="col-12 col-md-5">
                                         <div class="row" style="row-gap: .4rem;">
                                             <div class="col">
-                                                <img src="images/awards/rcwinter_2012.webp" class="img-thumbnail img-awards"
-                                                    alt="...">
+                                                <img src="images/awards/rcwinter_2012.webp"
+                                                    class="img-thumbnail img-awards" alt="...">
                                             </div>
                                             <div class="col">
 
@@ -638,6 +645,7 @@
 
     <!-- Photoswipe JS -->
     <script src="js/gallery.js" type="module"></script>
+    <script src="js/loader.js" type="module"></script>
 
 </body>
 
