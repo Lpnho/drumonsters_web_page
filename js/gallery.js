@@ -2,20 +2,22 @@
 
 import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe-lightbox.esm.js';
 
-const galleryImages = [
-    { src: 'images/gallery/gallery_1.png', width: 1080, height: 720 },
-    { src: 'images/gallery/gallery_2.png', width: 1080, height: 720 },
-    { src: 'images/gallery/gallery_3.png', width: 1080, height: 720 },
-    { src: 'images/gallery/gallery_2.png', width: 1080, height: 720 },
-    { src: 'images/gallery/gallery_2.png', width: 1080, height: 720 },
-];
+const galleryImages = [];
+
+for (let i = 1; i <= 11; i++) {
+    galleryImages.push({
+        src: `images/gallery/gallery_${i}.webp`,
+        width: 1080,
+        height: 720
+    });
+}
+
 
 const lightbox = new PhotoSwipeLightbox({
     gallery: '#gallery--fade-transition',
     showHideAnimationType: 'fade',
     dataSource: galleryImages,
     pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe.esm.js')
-    // pswpModule: () => import('/photoswipe/dist/photoswipe.esm.js')
 });
 
 const galleryHtml = document.getElementById('gallery-images');
@@ -57,6 +59,7 @@ function changeImageInFocus(index, item) {
     removeDisplayNone(div_displayElement)
     addDisplayNone(video_displayElement)
 
+    video_displayElement.innerHTML = ''
     img_displayElement.src = item.src
     img_displayElement.alt = item.alt
     div_displayElement.setAttribute('data-pswp-src', item.src)
@@ -80,6 +83,9 @@ function changeVideoInFocus(item) {
     videoElement.play();
 }
 function onImageClick(index, item) {
+    if (lastVideo != null) {
+        lastVideo.pause()
+    }
     changeImageInFocus(index, item)
     if (isScreenSizeMD()) {
         onDisplayImageClick();

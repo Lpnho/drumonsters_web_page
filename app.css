@@ -140,6 +140,7 @@ a {
 
 .svg-icon {
     width: 46px;
+    height: 46px;
     fill: var(--secondary-gray);
     /* height: 50; */
 }
@@ -236,11 +237,16 @@ a {
     margin-top: 1.4rem;
 }
 
+.sector-container {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* 800 x 600 -> Redmensionar imagens antes de adicinar*/
 .img-gallery {
-    max-width: 800x;
+    max-width: 800px;
     max-height: 600px;
     object-fit: cover;
 }
