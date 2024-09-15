@@ -30,16 +30,30 @@
     <link rel="preload" href="assets/engrenagem.png" as="image" fetchpriority="high">
 
     <title>Drumonsters</title>
+    <style>
+        .loader-base-img {
+            background-image: url(assets/dru.webp);
+            background-size: cover;
+        }
+
+        .loader-base-img-spin {
+            background-image: url(assets/engrenagem.webp);
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
     <div id="preloader">
         <div style="position: relative;" class="loader-base">
-            <img src="assets/engrenagem.png" class="loader loader-base" style="position: absolute;" alt="">
-            <img src="assets/dru.png" class="loader-base"
-                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" alt="">
+            <div class="loader loader-base loader-base-img-spin" style="position: absolute;"></div>
+            <div class="loader-base loader-base-img"
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
         </div>
     </div>
+
+
 
     <!-- Header -->
     <header id="header" class="row justify-content-center bg-pr-dark-blue" style="padding: .2rem 0;">
@@ -635,8 +649,6 @@
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
-
-
 
 
     <!-- Bootstrap js -->
