@@ -3,8 +3,8 @@
 import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe-lightbox.esm.js';
 
 const galleryImages = [];
-
-for (let i = 1; i <= 11; i++) {
+const imageCount = 10;
+for (let i = 1; i <= imageCount ; i++) {
     galleryImages.push({
         src: `images/gallery/gallery_${i}.webp`,
         width: 1080,
